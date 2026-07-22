@@ -23,7 +23,7 @@ def get_track_json(artist, track):
     url = "http://ws.audioscrobbler.com/2.0/"
     params = {
         "method": "track.getInfo",
-        "api_key": "os.getenv("LASTFM_API_KEY")",
+        "api_key": os.getenv("LASTFM_API_KEY"),
         "artist": artist,
         "track": track,
         "format": "json"
